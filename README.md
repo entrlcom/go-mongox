@@ -198,7 +198,7 @@ type Repository struct {
 }
 
 func (x Repository) Create(ctx context.Context, person Person) error {
-	return collection.NewInsertOperation[Person](x.collection).Insert(ctx, person)
+	return collection.Insert[Person](x.collection).Insert(ctx, person)
 }
 
 func NewRepository(client *mongo.Client) Repository {
