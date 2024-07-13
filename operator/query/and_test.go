@@ -1,4 +1,4 @@
-package query_test //nolint:dupl // OK._test //nolint:dupl // OK.
+package query_test //nolint:dupl // OK.
 
 import (
 	"github.com/onsi/ginkgo/v2"

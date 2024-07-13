@@ -4,7 +4,7 @@
 
 - [Features](#features)
 	- [Collection Methods](#collection-methods)
-    - [Docker](#docker)
+	- [Docker](#docker)
 	- [Query Operators](#query-operators)
 	- [Update Operators](#update-operators)
 - [Examples](#examples)
@@ -27,7 +27,8 @@
 
 ### Docker
 
-Mongo in Docker is useful for testing purposes. Please, check `*_test.go` files in the `/collection` directory for examples.
+Mongo in Docker is useful for testing purposes. Please, check `*_test.go` files in the `/collection` directory for
+examples.
 
 ```go
 package main
@@ -63,11 +64,11 @@ func main() {
 
 #### Array Query Operators
 
-|   | Operator     | Function |
-|---|--------------|----------|
-| ❌ | `$all`       |          |
-| ❌ | `$elemMatch` |          |
-| ❌ | `$size`      |          |
+|    | Operator     | Function            |
+|----|--------------|---------------------|
+| ❌  | `$all`       |                     |
+| ✔️ | `$elemMatch` | `query.ElemMatch()` |
+| ❌  | `$size`      |                     |
 
 #### Bitwise Query Operators
 
